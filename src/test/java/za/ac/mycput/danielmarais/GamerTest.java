@@ -12,6 +12,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Ignore;
+import org.junit.jupiter.api.Timeout;
+import org.junit.jupiter.api.Disabled;
 
 /**
  *
@@ -51,7 +53,7 @@ public class GamerTest {
     assertEquals(buildtest1,buildtest3);
     }
     @Test
-    @Ignore
+    @Disabled("Deliberately Disabling test")
     public void testDisable(){
         assertEquals(buildtest1,buildtest3);
     }
